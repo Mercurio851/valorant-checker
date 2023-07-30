@@ -1,0 +1,7 @@
+pypiele
+colorama
+requests
+ssl
+urllib3
+tkinter
+pandas
