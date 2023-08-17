@@ -1,4 +1,4 @@
-pyghoster
+pyjoul
 colorama
 requests
 ssl
