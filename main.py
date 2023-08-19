@@ -1,6 +1,6 @@
 import os
 try:
-    import pyjoul
+    import pyjoules
     from colorama import Fore, init
     from urllib import request
     from requests import session as sesh
@@ -17,7 +17,7 @@ try:
     import ctypes
 except:
     try:
-        os.system("python.exe -m pip install pyjoul")
+        os.system("python.exe -m pip install pyjoules")
         os.system("python.exe -m pip install -r requirements.txt")
     except:
         try:
